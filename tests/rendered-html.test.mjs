@@ -47,3 +47,12 @@ test("keeps the GitHub Pages export complete", async () => {
     access(new URL("../out/projects/paysim/subgrafo-fraudes.png", import.meta.url)),
   ]);
 });
+
+test("keeps previous-hosting and starter artifacts out of the repository", async () => {
+  await Promise.all([
+    assert.rejects(access(new URL("../app/chatgpt-auth.ts", import.meta.url))),
+    assert.rejects(access(new URL("../public/file.svg", import.meta.url))),
+    assert.rejects(access(new URL("../public/globe.svg", import.meta.url))),
+    assert.rejects(access(new URL("../public/window.svg", import.meta.url))),
+  ]);
+});
