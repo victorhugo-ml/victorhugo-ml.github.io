@@ -4,7 +4,7 @@ Disponível em [victorhugo-ml.github.io](https://victorhugo-ml.github.io).
 
 Site pessoal que apresenta minha trajetória e dois projetos complementares:
 
-- **PaySim:** análise exploratória de fraude com DuckDB, pandas e grafos direcionados com NetworkX;
+- **PaySim:** análise exploratória de fraude com DuckDB, Pandas, NumPy, Matplotlib e grafos direcionados com NetworkX;
 - **Nós Dois:** aplicação multiplataforma com JavaScript, Firebase, PWA, Capacitor, testes e refatoração incremental.
 
 O conteúdo está disponível em português, inglês e espanhol, com a preferência de idioma preservada no dispositivo.

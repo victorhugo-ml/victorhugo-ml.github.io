@@ -256,7 +256,7 @@ export default function Home() {
         <div className="shell toolbox-inner">
           <div><p className="eyebrow">{copy.tools}</p><h2 id="toolbox-heading">{copy.toolsHeading[0]}<br />{copy.toolsHeading[1]}</h2></div>
           <div className="tool-groups">
-            <div><span>{copy.dataAnalysis}</span><p>Python · SQL · DuckDB · pandas · NumPy · NetworkX · Jupyter · Matplotlib</p></div>
+            <div><span>{copy.dataAnalysis}</span><p>Python · SQL · DuckDB · Pandas · NumPy · Matplotlib · NetworkX · Jupyter</p></div>
             <div><span>{copy.engineering}</span><p>JavaScript · Firebase · Cloud Functions · Git · GitHub Actions · PWA · Capacitor</p></div>
           </div>
         </div>

@@ -6,7 +6,7 @@ export function generateMetadata() {
     slug: "paysim",
     title: "PaySim — análise de fraude com grafos",
     description:
-      "Estudo de caso sobre amostragem estrutural, análise exploratória de fraude e modelagem de redes financeiras com DuckDB, pandas e NetworkX.",
+      "Estudo de caso sobre amostragem estrutural, análise exploratória de fraude e redes financeiras com DuckDB, Pandas, NumPy, Matplotlib e NetworkX.",
     image: "/projects/paysim/subgrafo-fraudes.png",
     imageWidth: 1289,
     imageHeight: 890,

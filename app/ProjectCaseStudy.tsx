@@ -40,7 +40,7 @@ const projects = {
         steps: [
           ["Consultar", "DuckDB e SQL filtram o CSV completo sem carregá-lo integralmente em um DataFrame."],
           ["Amostrar", "A seleção combina fraudes distribuídas no tempo, contas recorrentes, hubs, vizinhanças e transações normais."],
-          ["Modelar", "pandas prepara os dados e NetworkX representa contas como nós e transações como arestas direcionadas."],
+          ["Modelar", "Pandas e NumPy preparam os dados, NetworkX representa a rede e Matplotlib constrói as visualizações."],
         ],
         evidenceTitle: "Resultados que ajudam a formular novas perguntas",
         findings: [
@@ -64,7 +64,7 @@ const projects = {
         steps: [
           ["Query", "DuckDB and SQL filter the complete CSV without loading it entirely into a DataFrame."],
           ["Sample", "The selection combines frauds across time, recurring accounts, hubs, neighborhoods, and normal transactions."],
-          ["Model", "pandas prepares the data and NetworkX represents accounts as nodes and transactions as directed edges."],
+          ["Model", "Pandas and NumPy prepare the data, NetworkX represents the network, and Matplotlib builds the visualizations."],
         ],
         evidenceTitle: "Results that help frame new questions",
         findings: [
@@ -88,7 +88,7 @@ const projects = {
         steps: [
           ["Consultar", "DuckDB y SQL filtran el CSV completo sin cargarlo íntegramente en un DataFrame."],
           ["Muestrear", "La selección combina fraudes distribuidos en el tiempo, cuentas recurrentes, hubs, vecindarios y transacciones normales."],
-          ["Modelar", "pandas prepara los datos y NetworkX representa las cuentas como nodos y las transacciones como aristas dirigidas."],
+          ["Modelar", "Pandas y NumPy preparan los datos, NetworkX representa la red y Matplotlib construye las visualizaciones."],
         ],
         evidenceTitle: "Resultados que ayudan a formular nuevas preguntas",
         findings: [
