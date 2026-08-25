@@ -155,7 +155,7 @@ const translations = {
     methods: "Métodos en práctica",
     methodsList: "Análisis exploratorio · Muestreo estructural · Grafos dirigidos · Métricas de redes",
     transparencyTitle: "Transparencia sobre Nós Dois.",
-    transparency: "La implementación fue producida principalmente con IA generativa. Mi función fue concebir el producto, definir requisitos, orientar iteraciones, probar resultados y publicar una versión anonimizada. El proyecto demuestra coordinación y validación de IA, no autoría independiente de frontend o backend.",
+    transparency: "La implementación fue producida principalmente con IA generativa. Mi función fue concebir el producto, definir requisitos, orientar iteraciones, probar resultados y publicar una versión pública sin datos personales. El proyecto demuestra coordinación y validación de IA, no autoría independiente de frontend o backend.",
     letsTalk: "Hablemos",
     contactHeading: ["Busco problemas", "que valga la pena", "comprender."],
     contactCopy: "Disponible para prácticas en datos, analytics o inteligencia de negocios.",
