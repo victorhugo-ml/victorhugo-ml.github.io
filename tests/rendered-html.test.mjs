@@ -36,6 +36,8 @@ test("exports the Nós Dois case study with sanitized images", async () => {
 
   assert.match(html, /Transformar uma necessidade pessoal em um produto funcional/);
   assert.match(html, /implementação foi produzida majoritariamente com IA generativa/);
+  assert.match(html, /localização compartilhada por GPS/);
+  assert.match(html, /mapa ao vivo do casal/);
   assert.match(html, /github\.com\/victorhugo-ml\/nois-dois-app/);
   assert.match(html, /https:\/\/victorhugo-ml\.github\.io\/projects\/nois-dois\/inicio\.png/);
 });

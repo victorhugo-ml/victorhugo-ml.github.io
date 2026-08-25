@@ -5,7 +5,7 @@ Disponível em [victorhugo-ml.github.io](https://victorhugo-ml.github.io).
 Site pessoal que apresenta minha trajetória e dois projetos complementares:
 
 - **PaySim:** análise exploratória de fraude com DuckDB, Pandas, NumPy, Matplotlib e grafos direcionados com NetworkX;
-- **Nós Dois:** aplicativo pessoal criado por hobby para uso com minha namorada, com implementação produzida majoritariamente por IA generativa sob minha direção e validação.
+- **Nós Dois:** aplicativo pessoal criado por hobby para uso com minha namorada, reunindo agenda, finanças, metas, memórias e localização compartilhada por GPS, com implementação produzida majoritariamente por IA generativa sob minha direção e validação.
 
 O conteúdo está disponível em português, inglês e espanhol, com a preferência de idioma preservada no dispositivo.
 
