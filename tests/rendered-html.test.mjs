@@ -40,6 +40,10 @@ test("exports the Nós Dois case study with sanitized images", async () => {
   assert.match(html, /mapa ao vivo do casal/);
   assert.match(html, /github\.com\/victorhugo-ml\/nois-dois-app/);
   assert.match(html, /https:\/\/victorhugo-ml\.github\.io\/projects\/nois-dois\/inicio\.png/);
+  assert.match(html, /src="\/projects\/nois-dois\/mapa\.png"/);
+  assert.match(html, /src="\/projects\/nois-dois\/metas\.png"/);
+  assert.match(html, /src="\/projects\/nois-dois\/compras\.png"/);
+  assert.match(html, /src="\/projects\/nois-dois\/galeria\.png"/);
 });
 
 test("keeps the GitHub Pages export complete", async () => {
@@ -47,6 +51,10 @@ test("keeps the GitHub Pages export complete", async () => {
     access(new URL("../out/.nojekyll", import.meta.url)),
     access(new URL("../out/og.png", import.meta.url)),
     access(new URL("../out/projects/nois-dois/inicio.png", import.meta.url)),
+    access(new URL("../out/projects/nois-dois/mapa.png", import.meta.url)),
+    access(new URL("../out/projects/nois-dois/metas.png", import.meta.url)),
+    access(new URL("../out/projects/nois-dois/compras.png", import.meta.url)),
+    access(new URL("../out/projects/nois-dois/galeria.png", import.meta.url)),
     access(new URL("../out/projects/paysim/subgrafo-fraudes.png", import.meta.url)),
   ]);
 });
