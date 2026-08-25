@@ -6,7 +6,7 @@ export function generateMetadata() {
     slug: "nois-dois",
     title: "Nós Dois — projeto pessoal com IA generativa",
     description:
-      "Aplicativo pessoal criado por hobby para uso com minha namorada, com implementação produzida majoritariamente por IA generativa sob minha direção e validação.",
+      "Aplicativo pessoal com agenda, finanças, memórias e localização compartilhada por GPS, criado com implementação majoritariamente produzida por IA generativa sob minha direção e validação.",
     image: "/projects/nois-dois/inicio.png",
     imageWidth: 390,
     imageHeight: 844,

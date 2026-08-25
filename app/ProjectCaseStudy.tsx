@@ -123,10 +123,10 @@ const projects = {
       pt: {
         category: "Projeto pessoal · produto · IA generativa",
         title: "Nós Dois",
-        intro: "Um aplicativo que idealizei por hobby para mim e minha namorada organizarmos rotina, finanças, metas e memórias. A implementação foi produzida majoritariamente com IA generativa, sob minha orientação e validação.",
-        facts: [["Pessoal", "origem"], ["IA generativa", "implementação"], ["Testes", "validação"], ["Sanitizada", "versão pública"]],
+        intro: "Um aplicativo que idealizei por hobby para mim e minha namorada organizarmos agenda, finanças, metas, memórias e localização compartilhada por GPS. A implementação foi produzida majoritariamente com IA generativa, sob minha orientação e validação.",
+        facts: [["Pessoal", "origem"], ["IA generativa", "implementação"], ["GPS ao vivo", "funcionalidade"], ["Sanitizada", "versão pública"]],
         challengeTitle: "Transformar uma necessidade pessoal em um produto funcional",
-        challengeBody: "Eu queria reunir partes da nossa rotina em um único espaço compartilhado. Como o objetivo era criar algo útil por hobby, e não demonstrar desenvolvimento web convencional, usei IA generativa como principal meio de implementação e conduzi o processo por ciclos de especificação, teste e ajuste.",
+        challengeBody: "Eu queria reunir partes da nossa rotina em um único espaço compartilhado. Além de agenda, gastos, metas, diário, galeria, bilhetes, lembretes e recursos nativos, a versão privada inclui um sistema de GPS com mapa ao vivo do casal, rastreamento adaptativo em segundo plano, distância, status online ou offline, bateria, histórico do dia, rotas e lugares com alertas de chegada e saída. Como o objetivo era criar algo útil por hobby, e não demonstrar desenvolvimento web convencional, usei IA generativa como principal meio de implementação e conduzi o processo por ciclos de especificação, teste e ajuste.",
         approachTitle: "Meu papel no processo",
         steps: [
           ["Definir", "Mapeei necessidades reais, selecionei funcionalidades e organizei os fluxos que fariam sentido para nós dois."],
@@ -135,7 +135,7 @@ const projects = {
         ],
         evidenceTitle: "O que o projeto realmente demonstra",
         findings: [
-          "Capacidade de transformar uma necessidade pessoal em requisitos, prioridades e critérios de aceitação.",
+          "Capacidade de transformar uma necessidade pessoal em um produto amplo, com organização compartilhada, recursos nativos e localização por GPS.",
           "Coordenação iterativa de IA: formular instruções, avaliar saídas, identificar problemas e pedir correções.",
           "Responsabilidade na publicação: dados fictícios, credenciais externas, documentação, testes e revisão de segurança.",
         ],
@@ -147,10 +147,10 @@ const projects = {
       en: {
         category: "Personal project · product · generative AI",
         title: "Nós Dois",
-        intro: "A hobby app I conceived for my girlfriend and me to organize routines, finances, goals, and memories. Most of the implementation was produced with generative AI under my direction and validation.",
-        facts: [["Personal", "origin"], ["Generative AI", "implementation"], ["Testing", "validation"], ["Sanitized", "public version"]],
+        intro: "A hobby app I conceived for my girlfriend and me to organize calendars, finances, goals, memories, and shared GPS location. Most of the implementation was produced with generative AI under my direction and validation.",
+        facts: [["Personal", "origin"], ["Generative AI", "implementation"], ["Live GPS", "feature"], ["Sanitized", "public version"]],
         challengeTitle: "Turning a personal need into a functional product",
-        challengeBody: "I wanted to bring parts of our routine into a single shared space. Because the goal was to create something useful as a hobby, rather than demonstrate conventional web development, I used generative AI as the primary implementation method and guided the process through specification, testing, and adjustment cycles.",
+        challengeBody: "I wanted to bring parts of our routine into a single shared space. Alongside calendars, expenses, goals, a journal, galleries, notes, reminders, and native features, the private version includes a GPS system with a live map for the couple, adaptive background tracking, distance, online or offline status, battery level, daily history, routes, and places with arrival and departure alerts. Because the goal was to create something useful as a hobby, rather than demonstrate conventional web development, I used generative AI as the primary implementation method and guided the process through specification, testing, and adjustment cycles.",
         approachTitle: "My role in the process",
         steps: [
           ["Define", "I mapped real needs, selected features, and organized the flows that made sense for the two of us."],
@@ -159,7 +159,7 @@ const projects = {
         ],
         evidenceTitle: "What the project actually demonstrates",
         findings: [
-          "The ability to turn a personal need into requirements, priorities, and acceptance criteria.",
+          "The ability to turn a personal need into a broad product combining shared organization, native features, and GPS location.",
           "Iterative AI coordination: writing instructions, evaluating outputs, identifying problems, and requesting corrections.",
           "Responsible publication: fictional data, externalized credentials, documentation, tests, and security review.",
         ],
@@ -171,10 +171,10 @@ const projects = {
       es: {
         category: "Proyecto personal · producto · IA generativa",
         title: "Nós Dois",
-        intro: "Una aplicación que ideé como hobby para que mi novia y yo organicemos rutinas, finanzas, metas y recuerdos. La mayor parte de la implementación fue producida con IA generativa bajo mi dirección y validación.",
-        facts: [["Personal", "origen"], ["IA generativa", "implementación"], ["Pruebas", "validación"], ["Sanitizada", "versión pública"]],
+        intro: "Una aplicación que ideé como hobby para que mi novia y yo organicemos agenda, finanzas, metas, recuerdos y ubicación compartida por GPS. La mayor parte de la implementación fue producida con IA generativa bajo mi dirección y validación.",
+        facts: [["Personal", "origen"], ["IA generativa", "implementación"], ["GPS en vivo", "funcionalidad"], ["Sanitizada", "versión pública"]],
         challengeTitle: "Convertir una necesidad personal en un producto funcional",
-        challengeBody: "Quería reunir partes de nuestra rutina en un único espacio compartido. Como el objetivo era crear algo útil por afición, y no demostrar desarrollo web convencional, usé IA generativa como principal medio de implementación y dirigí el proceso mediante ciclos de especificación, prueba y ajuste.",
+        challengeBody: "Quería reunir partes de nuestra rutina en un único espacio compartido. Además de agenda, gastos, metas, diario, galería, notas, recordatorios y recursos nativos, la versión privada incluye un sistema de GPS con mapa en vivo de la pareja, seguimiento adaptativo en segundo plano, distancia, estado en línea o sin conexión, batería, historial del día, rutas y lugares con alertas de llegada y salida. Como el objetivo era crear algo útil por afición, y no demostrar desarrollo web convencional, usé IA generativa como principal medio de implementación y dirigí el proceso mediante ciclos de especificación, prueba y ajuste.",
         approachTitle: "Mi papel en el proceso",
         steps: [
           ["Definir", "Mapeé necesidades reales, seleccioné funcionalidades y organicé los flujos que tenían sentido para los dos."],
@@ -183,7 +183,7 @@ const projects = {
         ],
         evidenceTitle: "Lo que realmente demuestra el proyecto",
         findings: [
-          "Capacidad para transformar una necesidad personal en requisitos, prioridades y criterios de aceptación.",
+          "Capacidad para transformar una necesidad personal en un producto amplio, con organización compartida, recursos nativos y ubicación por GPS.",
           "Coordinación iterativa de IA: formular instrucciones, evaluar resultados, identificar problemas y solicitar correcciones.",
           "Publicación responsable: datos ficticios, credenciales externas, documentación, pruebas y revisión de seguridad.",
         ],
