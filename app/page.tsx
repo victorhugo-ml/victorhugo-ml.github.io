@@ -3,9 +3,9 @@
 import { LanguageSwitcher, type Locale, usePortfolioLanguage } from "./language";
 
 const localizedTitles: Record<Locale, string> = {
-  pt: "Victor Hugo — Dados, engenharia e produto",
-  en: "Victor Hugo — Data, engineering, and product",
-  es: "Victor Hugo — Datos, ingeniería y producto",
+  pt: "Victor Hugo — Dados, análise e produto",
+  en: "Victor Hugo — Data, analysis, and product",
+  es: "Victor Hugo — Datos, análisis y producto",
 };
 
 const translations = {
@@ -16,45 +16,47 @@ const translations = {
     available: "Disponível para estágio",
     hero: ["Dados, código", "e produto —"],
     heroAccent: "com propósito.",
-    intro: "Sou Victor Hugo, estudante da UFABC. Investigo redes financeiras, construo produtos digitais e uso cada projeto para aprofundar o que aprendo sobre dados, software e produto.",
+    intro: "Sou Victor Hugo, estudante da UFABC. Investigo redes financeiras, desenvolvo análises e uso projetos pessoais para aprofundar o que aprendo sobre dados, método e produto.",
     seeProjects: "Ver projetos",
     signals: [
       ["Formação", "UFABC"],
       ["Portfólio", "2 projetos públicos"],
-      ["Interesse", "Dados + software"],
+      ["Interesse", "Dados + análise"],
     ],
     focus: "Foco atual",
     focusItems: [
       ["Dados & grafos", "Estrutura, contexto e investigação."],
-      ["Produto & engenharia", "Arquitetura, testes e evolução."],
+      ["Produto & IA", "Definição, iteração e validação."],
     ],
     selected: "Trabalho selecionado",
     projectHeading: ["Dois projetos.", "Duas perspectivas."],
     paysim: "Análise exploratória de fraude com uma amostra estrutural de 1.000 transações e grafos direcionados.",
-    noisDois: "Aplicação multiplataforma para duas pessoas organizarem rotina, finanças, metas, memórias e eventos em um só espaço compartilhado.",
+    noisDois: "Projeto pessoal para mim e minha namorada: defini as funcionalidades e coordenei com IA generativa a criação de um app compartilhado para rotina e memórias.",
+    noisTags: ["Projeto pessoal", "IA generativa", "Produto"],
     explore: "Ver estudo de caso",
     how: "Como eu trabalho",
     approachHeading: ["Curiosidade com", "método."],
     approaches: [
       ["Investigar", "Transformo perguntas amplas em análises delimitadas, com metodologia e limitações visíveis."],
-      ["Construir", "Conecto dados, código e experiência de uso para criar algo funcional, não apenas demonstrativo."],
+      ["Orientar", "Conduzo iterações com clareza sobre o papel das ferramentas e testo os resultados antes de apresentá-los."],
       ["Evoluir", "Uso documentação, testes, CI e Pull Requests para melhorar projetos sem apagar sua história."],
     ],
     aboutLabel: "Sobre",
     aboutHeading: ["Aprender fazendo.", "Entender evoluindo."],
-    aboutText: "Curso Bacharelado em Ciência e Tecnologia na UFABC, com trajetória planejada para Ciência de Dados. Minha experiência anterior no SENAI e na Mercedes-Benz trouxe disciplina de execução; hoje aplico essa base a problemas de dados e software.",
+    aboutText: "Curso Bacharelado em Ciência e Tecnologia na UFABC, com trajetória planejada para Ciência de Dados. Minha experiência anterior no SENAI e na Mercedes-Benz trouxe disciplina de execução; hoje aplico essa base a problemas de dados e tecnologia.",
     ufabc: "BC&T · trajetória para Ciência de Dados",
     technical: "Aprendizagem técnica",
-    languages: ["Português nativo", "Inglês B2", "Espanhol intermediário"],
+    languages: ["Português nativo", "Inglês C1 (EF SET)", "Espanhol intermediário"],
     tools: "Ferramentas em prática",
-    toolsHeading: ["Uma base que atravessa", "dados e engenharia."],
+    toolsHeading: ["Uma base voltada a", "dados e investigação."],
     dataAnalysis: "Dados & análise",
-    engineering: "Engenharia & produto",
-    transparencyTitle: "Transparência faz parte do trabalho.",
-    transparency: "Ferramentas de IA generativa apoiam prototipação, revisão e documentação. As decisões, a execução, a interpretação e a responsabilidade pelo conteúdo permanecem minhas.",
+    methods: "Métodos em prática",
+    methodsList: "Análise exploratória · Amostragem estrutural · Grafos direcionados · Métricas de rede",
+    transparencyTitle: "Transparência sobre o Nós Dois.",
+    transparency: "A implementação foi produzida majoritariamente com IA generativa. Meu papel foi idealizar o produto, definir requisitos, orientar iterações, testar resultados e publicar uma versão sanitizada. O projeto demonstra coordenação e validação de IA, não autoria independente de frontend ou backend.",
     letsTalk: "Vamos conversar",
     contactHeading: ["Procuro problemas", "que valham a pena", "entender."],
-    contactCopy: "Aberto a oportunidades de estágio em dados, analytics ou engenharia de software.",
+    contactCopy: "Aberto a oportunidades de estágio em dados, analytics ou inteligência de negócios.",
     portfolio: "Victor Hugo · Portfólio",
     top: "Voltar ao topo ↑",
   },
@@ -65,45 +67,47 @@ const translations = {
     available: "Open to internship opportunities",
     hero: ["Data, code", "and product —"],
     heroAccent: "with purpose.",
-    intro: "I’m Victor Hugo, a student at UFABC. I explore financial networks, build digital products, and use each project to deepen what I learn about data, software, and product.",
+    intro: "I’m Victor Hugo, a student at UFABC. I explore financial networks, develop analyses, and use personal projects to deepen what I learn about data, method, and product.",
     seeProjects: "View projects",
     signals: [
       ["Education", "UFABC"],
       ["Portfolio", "2 public projects"],
-      ["Interest", "Data + software"],
+      ["Interest", "Data + analysis"],
     ],
     focus: "Current focus",
     focusItems: [
       ["Data & graphs", "Structure, context, and investigation."],
-      ["Product & engineering", "Architecture, testing, and evolution."],
+      ["Product & AI", "Definition, iteration, and validation."],
     ],
     selected: "Selected work",
     projectHeading: ["Two projects.", "Two perspectives."],
     paysim: "Exploratory fraud analysis using a structural sample of 1,000 transactions and directed graphs.",
-    noisDois: "A cross-platform app for two people to organize routines, finances, goals, memories, and events in one shared space.",
+    noisDois: "A personal project for my girlfriend and me: I defined the features and coordinated the creation of a shared routine-and-memories app with generative AI.",
+    noisTags: ["Personal project", "Generative AI", "Product"],
     explore: "View case study",
     how: "How I work",
     approachHeading: ["Curiosity with", "method."],
     approaches: [
       ["Investigate", "I turn broad questions into focused analyses with a clear methodology and visible limitations."],
-      ["Build", "I connect data, code, and user experience to create something functional, not merely demonstrative."],
+      ["Direct", "I guide iterations with clarity about the role of each tool and test the results before presenting them."],
       ["Evolve", "I use documentation, tests, CI, and Pull Requests to improve projects without erasing their history."],
     ],
     aboutLabel: "About",
     aboutHeading: ["Learning by building.", "Growing through understanding."],
-    aboutText: "I study Science and Technology at UFABC, with a planned path toward Data Science. My previous experience at SENAI and Mercedes-Benz gave me discipline in execution; today I apply that foundation to data and software problems.",
+    aboutText: "I study Science and Technology at UFABC, with a planned path toward Data Science. My previous experience at SENAI and Mercedes-Benz gave me discipline in execution; today I apply that foundation to data and technology problems.",
     ufabc: "Science & Technology · path toward Data Science",
     technical: "Technical apprenticeship",
-    languages: ["Portuguese native", "English B2", "Spanish intermediate"],
+    languages: ["Portuguese native", "English C1 (EF SET)", "Spanish intermediate"],
     tools: "Tools in practice",
-    toolsHeading: ["A foundation spanning", "data and engineering."],
+    toolsHeading: ["A foundation focused on", "data and investigation."],
     dataAnalysis: "Data & analysis",
-    engineering: "Engineering & product",
-    transparencyTitle: "Transparency is part of the work.",
-    transparency: "Generative AI tools support prototyping, review, and documentation. Decisions, execution, interpretation, and responsibility for the content remain mine.",
+    methods: "Methods in practice",
+    methodsList: "Exploratory analysis · Structural sampling · Directed graphs · Network metrics",
+    transparencyTitle: "Transparency about Nós Dois.",
+    transparency: "The implementation was produced primarily with generative AI. My role was to conceive the product, define requirements, guide iterations, test results, and publish a sanitized version. The project demonstrates AI coordination and validation, not independent frontend or backend authorship.",
     letsTalk: "Let’s talk",
     contactHeading: ["I’m looking for problems", "worth taking the time", "to understand."],
-    contactCopy: "Open to internship opportunities in data, analytics, or software engineering.",
+    contactCopy: "Open to internship opportunities in data, analytics, or business intelligence.",
     portfolio: "Victor Hugo · Portfolio",
     top: "Back to top ↑",
   },
@@ -114,45 +118,47 @@ const translations = {
     available: "Disponible para prácticas",
     hero: ["Datos, código", "y producto —"],
     heroAccent: "con propósito.",
-    intro: "Soy Victor Hugo, estudiante de la UFABC. Investigo redes financieras, construyo productos digitales y uso cada proyecto para profundizar lo que aprendo sobre datos, software y producto.",
+    intro: "Soy Victor Hugo, estudiante de la UFABC. Investigo redes financieras, desarrollo análisis y uso proyectos personales para profundizar lo que aprendo sobre datos, método y producto.",
     seeProjects: "Ver proyectos",
     signals: [
       ["Formación", "UFABC"],
       ["Portafolio", "2 proyectos públicos"],
-      ["Interés", "Datos + software"],
+      ["Interés", "Datos + análisis"],
     ],
     focus: "Enfoque actual",
     focusItems: [
       ["Datos y grafos", "Estructura, contexto e investigación."],
-      ["Producto e ingeniería", "Arquitectura, pruebas y evolución."],
+      ["Producto e IA", "Definición, iteración y validación."],
     ],
     selected: "Trabajo seleccionado",
     projectHeading: ["Dos proyectos.", "Dos perspectivas."],
     paysim: "Análisis exploratorio de fraude con una muestra estructural de 1.000 transacciones y grafos dirigidos.",
-    noisDois: "Una aplicación multiplataforma para que dos personas organicen rutinas, finanzas, metas, recuerdos y eventos en un espacio compartido.",
+    noisDois: "Un proyecto personal para mi novia y para mí: definí las funciones y coordiné con IA generativa la creación de una app compartida para la rutina y los recuerdos.",
+    noisTags: ["Proyecto personal", "IA generativa", "Producto"],
     explore: "Ver caso de estudio",
     how: "Cómo trabajo",
     approachHeading: ["Curiosidad con", "método."],
     approaches: [
       ["Investigar", "Transformo preguntas amplias en análisis delimitados, con metodología y limitaciones visibles."],
-      ["Construir", "Conecto datos, código y experiencia de uso para crear algo funcional, no solo demostrativo."],
+      ["Orientar", "Guío iteraciones con claridad sobre el papel de las herramientas y pruebo los resultados antes de presentarlos."],
       ["Evolucionar", "Uso documentación, pruebas, CI y Pull Requests para mejorar proyectos sin borrar su historia."],
     ],
     aboutLabel: "Sobre mí",
     aboutHeading: ["Aprender construyendo.", "Crecer comprendiendo."],
-    aboutText: "Estudio Ciencia y Tecnología en la UFABC, con una trayectoria planificada hacia Ciencia de Datos. Mi experiencia anterior en SENAI y Mercedes-Benz me aportó disciplina de ejecución; hoy aplico esa base a problemas de datos y software.",
+    aboutText: "Estudio Ciencia y Tecnología en la UFABC, con una trayectoria planificada hacia Ciencia de Datos. Mi experiencia anterior en SENAI y Mercedes-Benz me aportó disciplina de ejecución; hoy aplico esa base a problemas de datos y tecnología.",
     ufabc: "Ciencia y Tecnología · trayectoria hacia Ciencia de Datos",
     technical: "Formación técnica",
-    languages: ["Portugués nativo", "Inglés B2", "Español intermedio"],
+    languages: ["Portugués nativo", "Inglés C1 (EF SET)", "Español intermedio"],
     tools: "Herramientas en práctica",
-    toolsHeading: ["Una base que conecta", "datos e ingeniería."],
+    toolsHeading: ["Una base centrada en", "datos e investigación."],
     dataAnalysis: "Datos y análisis",
-    engineering: "Ingeniería y producto",
-    transparencyTitle: "La transparencia forma parte del trabajo.",
-    transparency: "Las herramientas de IA generativa apoyan la creación de prototipos, la revisión y la documentación. Las decisiones, la ejecución, la interpretación y la responsabilidad por el contenido siguen siendo mías.",
+    methods: "Métodos en práctica",
+    methodsList: "Análisis exploratorio · Muestreo estructural · Grafos dirigidos · Métricas de redes",
+    transparencyTitle: "Transparencia sobre Nós Dois.",
+    transparency: "La implementación fue producida principalmente con IA generativa. Mi función fue concebir el producto, definir requisitos, orientar iteraciones, probar resultados y publicar una versión pública sin datos personales. El proyecto demuestra coordinación y validación de IA, no autoría independiente de frontend o backend.",
     letsTalk: "Hablemos",
     contactHeading: ["Busco problemas", "que valga la pena", "comprender."],
-    contactCopy: "Disponible para prácticas en datos, analytics o ingeniería de software.",
+    contactCopy: "Disponible para prácticas en datos, analytics o inteligencia de negocios.",
     portfolio: "Victor Hugo · Portafolio",
     top: "Volver arriba ↑",
   },
@@ -201,7 +207,7 @@ export default function Home() {
             </div>
           ))}
           <div className="focus-footer">
-            <span>Python · SQL · JavaScript</span>
+            <span>Python · SQL · DuckDB</span>
             <span className="orbit" aria-hidden="true"><i /><i /><i /></span>
           </div>
         </aside>
@@ -222,7 +228,7 @@ export default function Home() {
           <a className="project-card project-product" href="/projetos/nois-dois">
             <span className="project-index">02 / PRODUCT</span>
             <div className="project-visual product-visual" aria-hidden="true"><i /><i /><span>ND</span></div>
-            <div><h3>Nós Dois</h3><p>{copy.noisDois}</p><ul className="project-tags" aria-label="Nós Dois stack"><li>JavaScript</li><li>Firebase</li><li>Capacitor</li></ul></div>
+            <div><h3>Nós Dois</h3><p>{copy.noisDois}</p><ul className="project-tags" aria-label="Nós Dois project framing">{copy.noisTags.map((tag) => <li key={tag}>{tag}</li>)}</ul></div>
             <span className="project-link">{copy.explore} <Arrow /></span>
           </a>
         </div>
@@ -257,7 +263,7 @@ export default function Home() {
           <div><p className="eyebrow">{copy.tools}</p><h2 id="toolbox-heading">{copy.toolsHeading[0]}<br />{copy.toolsHeading[1]}</h2></div>
           <div className="tool-groups">
             <div><span>{copy.dataAnalysis}</span><p>Python · SQL · DuckDB · Pandas · NumPy · Matplotlib · NetworkX · Jupyter</p></div>
-            <div><span>{copy.engineering}</span><p>JavaScript · Firebase · Cloud Functions · Git · GitHub Actions · PWA · Capacitor</p></div>
+            <div><span>{copy.methods}</span><p>{copy.methodsList}</p></div>
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ test("exports the complete portfolio homepage", async () => {
   const html = await readPage("index.html");
 
   assert.match(html, /<html[^>]*lang="pt-BR"/i);
-  assert.match(html, /Victor Hugo — Dados, engenharia e produto/);
+  assert.match(html, /Victor Hugo — Dados, análise e produto/);
   assert.match(html, /Dados, código/);
   assert.match(html, />PT<\/button>/);
   assert.match(html, />EN<\/button>/);
@@ -34,7 +34,8 @@ test("exports the PaySim case study with canonical metadata", async () => {
 test("exports the Nós Dois case study with sanitized images", async () => {
   const html = await readPage("projetos/nois-dois/index.html");
 
-  assert.match(html, /Evoluir um produto real sem recomeçar do zero/);
+  assert.match(html, /Transformar uma necessidade pessoal em um produto funcional/);
+  assert.match(html, /implementação foi produzida majoritariamente com IA generativa/);
   assert.match(html, /github\.com\/victorhugo-ml\/nois-dois-app/);
   assert.match(html, /https:\/\/victorhugo-ml\.github\.io\/projects\/nois-dois\/inicio\.png/);
 });
