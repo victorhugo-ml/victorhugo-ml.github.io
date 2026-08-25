@@ -4,9 +4,9 @@ import { createProjectMetadata } from "../../project-metadata";
 export function generateMetadata() {
   return createProjectMetadata({
     slug: "nois-dois",
-    title: "Nós Dois — aplicação multiplataforma",
+    title: "Nós Dois — projeto pessoal com IA generativa",
     description:
-      "Estudo de caso de um produto compartilhado para rotina, finanças e memórias, construído para web, PWA e Android com Firebase e Capacitor.",
+      "Aplicativo pessoal criado por hobby para uso com minha namorada, com implementação produzida majoritariamente por IA generativa sob minha direção e validação.",
     image: "/projects/nois-dois/inicio.png",
     imageWidth: 390,
     imageHeight: 844,

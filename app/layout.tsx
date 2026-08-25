@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Victor Hugo — Dados, engenharia e produto";
+const title = "Victor Hugo — Dados, análise e produto";
 const description =
-  "Portfólio de Victor Hugo: análise de dados, grafos e desenvolvimento de produtos digitais.";
+  "Portfólio de Victor Hugo: análise de dados, grafos, métodos exploratórios e projetos pessoais.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://victorhugo-ml.github.io"),
