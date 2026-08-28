@@ -4,7 +4,7 @@ Disponível em [victorhugo-ml.github.io](https://victorhugo-ml.github.io).
 
 Site pessoal que apresenta minha trajetória e dois projetos complementares:
 
-- **PaySim:** análise exploratória de fraude com DuckDB, Pandas, NumPy, Matplotlib e grafos direcionados com NetworkX;
+- **PaySim:** projeto exploratório de estudo para praticar SQL, análise de dados e grafos com DuckDB, Pandas, NumPy, Matplotlib e NetworkX;
 - **Nós Dois:** aplicativo pessoal criado por hobby para uso com minha namorada, reunindo agenda, finanças, metas, memórias e localização compartilhada por GPS, com implementação produzida majoritariamente por IA generativa sob minha direção e validação.
 
 O conteúdo está disponível em português, inglês e espanhol, com a preferência de idioma preservada no dispositivo.
@@ -34,4 +34,4 @@ Cada alteração enviada à branch `main` é validada e publicada automaticament
 
 No **Nós Dois**, ferramentas de IA generativa produziram a maior parte da implementação. Meu papel foi idealizar o produto, definir requisitos, orientar iterações, testar os resultados e preparar uma versão pública sanitizada. O projeto é apresentado como evidência de definição de produto e coordenação responsável de IA, não como comprovação de domínio independente de frontend ou backend.
 
-O estudo de caso do **PaySim** permanece centrado na metodologia, na análise exploratória e nas limitações documentadas do trabalho.
+O estudo de caso do **PaySim** é apresentado como parte do meu aprendizado em Ciência de Dados. Ele permanece centrado na metodologia, na análise exploratória e nas limitações documentadas, sem ser descrito como um modelo preditivo ou uma solução antifraude pronta.

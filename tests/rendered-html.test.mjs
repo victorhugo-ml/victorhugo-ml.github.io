@@ -14,6 +14,7 @@ test("exports the complete portfolio homepage", async () => {
   assert.match(html, />EN<\/button>/);
   assert.match(html, />ES<\/button>/);
   assert.match(html, /PaySim/);
+  assert.match(html, /Projeto exploratório de estudo/);
   assert.match(html, /Nós Dois/);
   assert.match(html, /href="\/projetos\/paysim"/);
   assert.match(html, /href="\/projetos\/nois-dois"/);
@@ -26,6 +27,8 @@ test("exports the PaySim case study with canonical metadata", async () => {
   const html = await readPage("projetos/paysim/index.html");
 
   assert.match(html, /Preservar estrutura sem carregar milhões de linhas/);
+  assert.match(html, /318/);
+  assert.match(html, /exercício de aprendizado/);
   assert.match(html, /github\.com\/victorhugo-ml\/paysim-fraud-network-analysis/);
   assert.match(html, /https:\/\/victorhugo-ml\.github\.io\/projects\/paysim\/subgrafo-fraudes\.png/);
   assert.match(html, /https:\/\/victorhugo-ml\.github\.io\/projetos\/paysim/);
