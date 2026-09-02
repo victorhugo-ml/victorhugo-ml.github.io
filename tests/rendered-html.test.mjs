@@ -27,6 +27,8 @@ test("exports the PaySim case study with canonical metadata", async () => {
   const html = await readPage("projetos/paysim/index.html");
 
   assert.match(html, /Preservar estrutura sem carregar milhões de linhas/);
+  assert.match(html, /Comunicação e Redes \(BCM0506-15\)/);
+  assert.match(html, /apresentado ao professor em vídeo/);
   assert.match(html, /318/);
   assert.match(html, /exercício de aprendizado/);
   assert.match(html, /github\.com\/victorhugo-ml\/paysim-fraud-network-analysis/);

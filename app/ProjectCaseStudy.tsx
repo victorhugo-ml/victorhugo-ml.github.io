@@ -32,7 +32,7 @@ const projects = {
       pt: {
         category: "Dados · grafos · análise exploratória",
         title: "PaySim",
-        intro: "Projeto exploratório que desenvolvi para praticar SQL, análise de dados e grafos usando uma rede financeira sintética. A pergunta foi se a estrutura da rede mostraria diferenças nas fraudes selecionadas.",
+        intro: "Desenvolvido como projeto da disciplina Comunicação e Redes (BCM0506-15) do Bacharelado em Ciência e Tecnologia da UFABC, em 2026, e apresentado ao professor em vídeo. Como a ementa cobre redes complexas, teoria dos grafos e propriedades estruturais de redes, conduzi a análise como um problema de grafo, e não como um problema tabular.",
         facts: [["1.000", "transações"], ["25", "fraudes selecionadas"], ["1.780", "nós"], ["318", "períodos"]],
         challengeTitle: "Preservar estrutura sem carregar milhões de linhas",
         challengeBody: "O PaySim possui milhões de linhas, mas eu precisava de uma rede pequena para estudar e visualizar. Uma amostra aleatória simples eliminava várias conexões. Por isso, montei uma seleção de 1.000 transações sem tratar essa amostra como representativa da população.",
@@ -56,7 +56,7 @@ const projects = {
       en: {
         category: "Data · graphs · exploratory analysis",
         title: "PaySim",
-        intro: "An exploratory project I developed to practice SQL, data analysis, and graphs using a synthetic financial network. I asked whether the network structure would show differences in the selected fraud cases.",
+        intro: "Developed in 2026 as a project for the Communication and Networks course (BCM0506-15) in UFABC's Bachelor of Science and Technology programme and presented to the professor by video. Because the syllabus covers complex networks, graph theory, and structural network properties, I approached the analysis as a graph problem rather than a tabular one.",
         facts: [["1,000", "transactions"], ["25", "selected frauds"], ["1,780", "nodes"], ["318", "time steps"]],
         challengeTitle: "Preserving structure without loading millions of rows",
         challengeBody: "PaySim contains millions of rows, but I needed a small network that I could study and visualize. A simple random sample removed many connections, so I assembled 1,000 transactions without treating the result as representative of the full population.",
@@ -80,7 +80,7 @@ const projects = {
       es: {
         category: "Datos · grafos · análisis exploratorio",
         title: "PaySim",
-        intro: "Un proyecto exploratorio que desarrollé para practicar SQL, análisis de datos y grafos con una red financiera sintética. La pregunta fue si la estructura de la red mostraría diferencias en los fraudes seleccionados.",
+        intro: "Desarrollado en 2026 como proyecto de la asignatura Comunicación y Redes (BCM0506-15) del Bachillerato en Ciencia y Tecnología de la UFABC y presentado al profesor en video. Como el programa abarca redes complejas, teoría de grafos y propiedades estructurales de las redes, enfoqué el análisis como un problema de grafos y no como un problema tabular.",
         facts: [["1.000", "transacciones"], ["25", "fraudes seleccionados"], ["1.780", "nodos"], ["318", "períodos"]],
         challengeTitle: "Preservar la estructura sin cargar millones de filas",
         challengeBody: "PaySim contiene millones de filas, pero yo necesitaba una red pequeña para estudiar y visualizar. Una muestra aleatoria simple eliminaba muchas conexiones, así que reuní 1.000 transacciones sin tratar el resultado como representativo de toda la población.",
