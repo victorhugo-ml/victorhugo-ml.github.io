@@ -46,7 +46,9 @@ const projects = {
         findings: [
           "Nós associados às fraudes selecionadas tiveram in-degree médio de 1,88, contra 0,52 nos demais nós.",
           "O valor mediano das transações fraudulentas foi 722.832,95, contra 101.598,47 nas transações normais.",
-          "A conta de origem terminou com saldo zero em 100% das fraudes selecionadas, contra 24,00% das demais transações.",
+          "Na amostra, o saldo da origem passou de positivo a zero em 100% das fraudes selecionadas, contra 24,00% das demais transações.",
+          "O diagnóstico registrou 2 origens recorrentes e 3 contas com entrada e saída: algumas conexões foram preservadas, mas a rede permaneceu muito esparsa.",
+          "Saldos posteriores à transação servem à análise retrospectiva; usá-los para prever antes da conclusão da operação representaria risco de vazamento temporal.",
         ],
         considerationsTitle: "Exploratório, não preditivo",
         considerationsBody: "Este é um exercício de aprendizado, não um modelo antifraude pronto. A amostra foi construída para preservar fraudes e estruturas interessantes. Os números não estimam a prevalência real, não sustentam inferência causal e não avaliam um classificador. Centralidade também não é evidência de fraude.",
@@ -70,7 +72,9 @@ const projects = {
         findings: [
           "Nodes linked to selected frauds had a mean in-degree of 1.88, compared with 0.52 for other nodes.",
           "The median fraudulent transaction value was 722,832.95, compared with 101,598.47 for normal transactions.",
-          "The origin account ended with a zero balance in 100% of selected frauds, compared with 24.00% of other transactions.",
+          "In the sample, origin balances fell from positive to zero in 100% of selected fraud cases, compared with 24.00% of other transactions.",
+          "The diagnostic recorded 2 recurring origins and 3 accounts with incoming and outgoing edges: some connections were preserved, but the network remained very sparse.",
+          "Post-transaction balances support retrospective analysis; using them to predict before transaction completion would risk temporal leakage.",
         ],
         considerationsTitle: "Exploratory, not predictive",
         considerationsBody: "This is a learning exercise, not a production-ready fraud model. The sample was designed to preserve frauds and interesting structures. The figures do not estimate real prevalence, support causal inference, or evaluate a classifier. Centrality is not evidence of fraud either.",
@@ -94,7 +98,9 @@ const projects = {
         findings: [
           "Los nodos asociados a los fraudes seleccionados tuvieron un in-degree medio de 1,88, frente a 0,52 en los demás nodos.",
           "El valor mediano de las transacciones fraudulentas fue 722.832,95, frente a 101.598,47 en las transacciones normales.",
-          "La cuenta de origen terminó con saldo cero en el 100% de los fraudes seleccionados, frente al 24,00% de las demás transacciones.",
+          "En la muestra, el saldo de origen pasó de positivo a cero en el 100% de los fraudes seleccionados, frente al 24,00% de las demás transacciones.",
+          "El diagnóstico registró 2 orígenes recurrentes y 3 cuentas con entradas y salidas: se conservaron algunas conexiones, pero la red siguió siendo muy dispersa.",
+          "Los saldos posteriores a la transacción sirven para el análisis retrospectivo; usarlos para predecir antes de completar la operación implicaría riesgo de fuga temporal de información.",
         ],
         considerationsTitle: "Exploratorio, no predictivo",
         considerationsBody: "Este es un ejercicio de aprendizaje, no un modelo antifraude listo para producción. La muestra fue construida para preservar fraudes y estructuras interesantes. Las cifras no estiman la prevalencia real, no sustentan inferencias causales y no evalúan un clasificador. La centralidad tampoco es evidencia de fraude.",

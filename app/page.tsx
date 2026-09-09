@@ -1,6 +1,7 @@
 "use client";
 
 import { LanguageSwitcher, type Locale, usePortfolioLanguage } from "./language";
+import { profile } from "./profile";
 
 const localizedTitles: Record<Locale, string> = {
   pt: "Victor Hugo — Dados, análise e produto",
@@ -16,7 +17,7 @@ const translations = {
     available: "Disponível para estágio em Ciência de Dados",
     hero: ["Dados, código", "e produto —"],
     heroAccent: "com propósito.",
-    intro: "Sou Victor Hugo, estudante da UFABC. Investigo redes financeiras, desenvolvo análises e uso projetos pessoais para aprofundar o que aprendo sobre dados, método e produto.",
+    intro: "Sou Victor Hugo, estudante da UFABC em busca de estágio em Ciência de Dados. Pratico Python e SQL em projetos acadêmicos e aprofundo meus estudos em estatística e Machine Learning.",
     seeProjects: "Ver projetos",
     signals: [
       ["Formação", "UFABC"],
@@ -26,7 +27,7 @@ const translations = {
     focus: "Foco atual",
     focusItems: [
       ["Dados & grafos", "Estrutura, contexto e investigação."],
-      ["Produto & IA", "Definição, iteração e validação."],
+      ["Machine Learning", "Fundamentos em estudo no PMQ/UFABC."],
     ],
     selected: "Trabalho selecionado",
     projectHeading: ["Dois projetos.", "Duas perspectivas."],
@@ -45,6 +46,7 @@ const translations = {
     aboutHeading: ["Aprender fazendo.", "Entender evoluindo."],
     aboutText: "Curso Bacharelado em Ciência e Tecnologia na UFABC, com trajetória planejada para Ciência de Dados. Minha experiência anterior no SENAI e na Mercedes-Benz trouxe disciplina de execução; hoje aplico essa base a problemas de dados e tecnologia.",
     ufabc: "BC&T · trajetória para Ciência de Dados",
+    pmq: "Inteligência Artificial Aplicada · extensão em andamento · setembro–dezembro",
     technical: "Aprendizagem técnica",
     languages: ["Português nativo", "Inglês C1 (EF SET)", "Espanhol intermediário"],
     tools: "Ferramentas em prática",
@@ -53,7 +55,7 @@ const translations = {
     methods: "Métodos em prática",
     methodsList: "Análise exploratória · Amostragem estrutural · Grafos direcionados · Métricas de rede",
     transparencyTitle: "Transparência sobre o Nós Dois.",
-    transparency: "A implementação foi produzida majoritariamente com IA generativa. Meu papel foi idealizar o produto, definir requisitos, orientar iterações, testar resultados e publicar uma versão sanitizada. O projeto demonstra coordenação e validação de IA, não autoria independente de frontend ou backend.",
+    transparency: "A implementação foi produzida majoritariamente com IA generativa, sob minha orientação e validação. O estudo de caso detalha meu papel e os limites da autoria.",
     letsTalk: "Vamos conversar",
     contactHeading: ["Procuro problemas", "que valham a pena", "entender."],
     contactCopy: "Aberto a oportunidades de estágio em Ciência de Dados.",
@@ -67,7 +69,7 @@ const translations = {
     available: "Open to Data Science internships",
     hero: ["Data, code", "and product —"],
     heroAccent: "with purpose.",
-    intro: "I’m Victor Hugo, a student at UFABC. I explore financial networks, develop analyses, and use personal projects to deepen what I learn about data, method, and product.",
+    intro: "I’m Victor Hugo, a UFABC student seeking a Data Science internship. I practice Python and SQL through academic projects and am developing my foundations in statistics and Machine Learning.",
     seeProjects: "View projects",
     signals: [
       ["Education", "UFABC"],
@@ -77,7 +79,7 @@ const translations = {
     focus: "Current focus",
     focusItems: [
       ["Data & graphs", "Structure, context, and investigation."],
-      ["Product & AI", "Definition, iteration, and validation."],
+      ["Machine Learning", "Studying the foundations at PMQ/UFABC."],
     ],
     selected: "Selected work",
     projectHeading: ["Two projects.", "Two perspectives."],
@@ -96,6 +98,7 @@ const translations = {
     aboutHeading: ["Learning by building.", "Growing through understanding."],
     aboutText: "I study Science and Technology at UFABC, with a planned path toward Data Science. My previous experience at SENAI and Mercedes-Benz gave me discipline in execution; today I apply that foundation to data and technology problems.",
     ufabc: "Science & Technology · path toward Data Science",
+    pmq: "Applied Artificial Intelligence · extension programme in progress · September–December",
     technical: "Technical apprenticeship",
     languages: ["Portuguese native", "English C1 (EF SET)", "Spanish intermediate"],
     tools: "Tools in practice",
@@ -104,7 +107,7 @@ const translations = {
     methods: "Methods in practice",
     methodsList: "Exploratory analysis · Structural sampling · Directed graphs · Network metrics",
     transparencyTitle: "Transparency about Nós Dois.",
-    transparency: "The implementation was produced primarily with generative AI. My role was to conceive the product, define requirements, guide iterations, test results, and publish a sanitized version. The project demonstrates AI coordination and validation, not independent frontend or backend authorship.",
+    transparency: "The implementation was produced primarily with generative AI under my direction and validation. The case study explains my role and the scope of authorship.",
     letsTalk: "Let’s talk",
     contactHeading: ["I’m looking for problems", "worth taking the time", "to understand."],
     contactCopy: "Open to Data Science internship opportunities.",
@@ -118,7 +121,7 @@ const translations = {
     available: "Disponible para prácticas en Ciencia de Datos",
     hero: ["Datos, código", "y producto —"],
     heroAccent: "con propósito.",
-    intro: "Soy Victor Hugo, estudiante de la UFABC. Investigo redes financieras, desarrollo análisis y uso proyectos personales para profundizar lo que aprendo sobre datos, método y producto.",
+    intro: "Soy Victor Hugo, estudiante de la UFABC en busca de prácticas en Ciencia de Datos. Practico Python y SQL en proyectos académicos y profundizo mis estudios de estadística y Machine Learning.",
     seeProjects: "Ver proyectos",
     signals: [
       ["Formación", "UFABC"],
@@ -128,7 +131,7 @@ const translations = {
     focus: "Enfoque actual",
     focusItems: [
       ["Datos y grafos", "Estructura, contexto e investigación."],
-      ["Producto e IA", "Definición, iteración y validación."],
+      ["Machine Learning", "Fundamentos en estudio en PMQ/UFABC."],
     ],
     selected: "Trabajo seleccionado",
     projectHeading: ["Dos proyectos.", "Dos perspectivas."],
@@ -147,6 +150,7 @@ const translations = {
     aboutHeading: ["Aprender construyendo.", "Crecer comprendiendo."],
     aboutText: "Estudio Ciencia y Tecnología en la UFABC, con una trayectoria planificada hacia Ciencia de Datos. Mi experiencia anterior en SENAI y Mercedes-Benz me aportó disciplina de ejecución; hoy aplico esa base a problemas de datos y tecnología.",
     ufabc: "Ciencia y Tecnología · trayectoria hacia Ciencia de Datos",
+    pmq: "Inteligencia Artificial Aplicada · extensión en curso · septiembre–diciembre",
     technical: "Formación técnica",
     languages: ["Portugués nativo", "Inglés C1 (EF SET)", "Español intermedio"],
     tools: "Herramientas en práctica",
@@ -155,7 +159,7 @@ const translations = {
     methods: "Métodos en práctica",
     methodsList: "Análisis exploratorio · Muestreo estructural · Grafos dirigidos · Métricas de redes",
     transparencyTitle: "Transparencia sobre Nós Dois.",
-    transparency: "La implementación fue producida principalmente con IA generativa. Mi función fue concebir el producto, definir requisitos, orientar iteraciones, probar resultados y publicar una versión pública sin datos personales. El proyecto demuestra coordinación y validación de IA, no autoría independiente de frontend o backend.",
+    transparency: "La implementación fue producida principalmente con IA generativa bajo mi orientación y validación. El caso de estudio explica mi función y el alcance de la autoría.",
     letsTalk: "Hablemos",
     contactHeading: ["Busco problemas", "que valga la pena", "comprender."],
     contactCopy: "Disponible para prácticas en Ciencia de Datos.",
@@ -252,7 +256,8 @@ export default function Home() {
           <p>{copy.aboutText}</p>
         </div>
         <div className="timeline" aria-label={copy.aboutLabel}>
-          <div className="timeline-item"><span className="timeline-year">2025 — 29</span><div><strong>UFABC</strong><p>{copy.ufabc}</p></div></div>
+          <div className="timeline-item"><span className="timeline-year">{profile.bctStart} — {profile.bctGraduation}</span><div><strong>UFABC</strong><p>{copy.ufabc}</p></div></div>
+          <div className="timeline-item"><span className="timeline-year">{profile.pmqYear}</span><div><strong>UFABC / Programa Manuel Querino</strong><p>{copy.pmq} · {profile.pmqHours} h</p></div></div>
           <div className="timeline-item"><span className="timeline-year">2023 — 25</span><div><strong>SENAI / Mercedes-Benz</strong><p>{copy.technical}</p></div></div>
           <div className="language-line">{copy.languages.map((language) => <span key={language}>{language}</span>)}</div>
         </div>
@@ -279,8 +284,8 @@ export default function Home() {
           <h2 id="contact-heading">{copy.contactHeading[0]}<br />{copy.contactHeading[1]}<br /><em>{copy.contactHeading[2]}</em></h2>
           <p className="contact-copy">{copy.contactCopy}</p>
           <div className="contact-links">
-            <a href="https://www.linkedin.com/in/victor-hugo-miranda-marcelino-6b2850369/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
-            <a href="https://github.com/victorhugo-ml" target="_blank" rel="noreferrer">GitHub <Arrow /></a>
+            <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
+            <a href={profile.github} target="_blank" rel="noreferrer">GitHub <Arrow /></a>
           </div>
         </div>
       </section>

@@ -14,6 +14,12 @@ test("exports the complete portfolio homepage", async () => {
   assert.match(html, />EN<\/button>/);
   assert.match(html, />ES<\/button>/);
   assert.match(html, /PaySim/);
+  assert.match(html, /linkedin\.com\/in\/victorhmarcelino/);
+  assert.doesNotMatch(html, /victor-hugo-miranda-marcelino-6b2850369/);
+  assert.match(html, /2030/);
+  assert.match(html, /Programa Manuel Querino/);
+  assert.match(html, /extensão em andamento/);
+  assert.match(html, /Machine Learning/);
   assert.match(html, /Projeto exploratório de estudo/);
   assert.match(html, /Nós Dois/);
   assert.match(html, /href="\/projetos\/paysim"/);
