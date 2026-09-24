@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { LanguageSwitcher, type Locale, usePortfolioLanguage } from "./language";
 import { profile } from "./profile";
+import { LossCurve, StatsVisual } from "./StatsVisual";
 
 const localizedTitles: Record<Locale, string> = {
   pt: "Victor Hugo — Dados, análise e produto",
@@ -25,6 +27,11 @@ const translations = {
       ["Interesse", "Dados + análise"],
     ],
     focus: "Foco atual",
+    statsFit: "Regressão linear · IC 95%",
+    statsOutlier: "|resíduo| > 1,6σ",
+    statsResidual: "Resíduos e densidade normal ajustada · dados sintéticos",
+    paysimMetric: "Saldo de origem zerado",
+    paysimBars: [["Fraudes", "100%", 100], ["Demais transações", "24%", 24]] as [string, string, number][],
     focusItems: [
       ["Dados & grafos", "Estrutura, contexto e investigação."],
       ["Machine Learning", "Fundamentos em estudo no PMQ/UFABC."],
@@ -81,6 +88,11 @@ const translations = {
       ["Interest", "Data + analysis"],
     ],
     focus: "Current focus",
+    statsFit: "Linear regression · 95% CI",
+    statsOutlier: "|residual| > 1.6σ",
+    statsResidual: "Residuals and fitted normal density · synthetic data",
+    paysimMetric: "Zeroed origin balance",
+    paysimBars: [["Frauds", "100%", 100], ["Other transactions", "24%", 24]] as [string, string, number][],
     focusItems: [
       ["Data & graphs", "Structure, context, and investigation."],
       ["Machine Learning", "Studying the foundations at PMQ/UFABC."],
@@ -137,6 +149,11 @@ const translations = {
       ["Interés", "Datos + análisis"],
     ],
     focus: "Enfoque actual",
+    statsFit: "Regresión lineal · IC 95 %",
+    statsOutlier: "|residuo| > 1,6σ",
+    statsResidual: "Residuos y densidad normal ajustada · datos sintéticos",
+    paysimMetric: "Saldo de origen en cero",
+    paysimBars: [["Fraudes", "100 %", 100], ["Demás transacciones", "24 %", 24]] as [string, string, number][],
     focusItems: [
       ["Datos y grafos", "Estructura, contexto e investigación."],
       ["Machine Learning", "Fundamentos en estudio en PMQ/UFABC."],
@@ -214,18 +231,18 @@ export default function Home() {
           </dl>
         </div>
 
-        <aside className="focus-card" aria-label={copy.focus}>
-          <div className="focus-topline"><span>{copy.focus}</span><span>2026 — 27</span></div>
-          {copy.focusItems.map(([title, description], index) => (
-            <div className="focus-item" key={title}>
-              <span className="focus-number">0{index + 1}</span>
-              <div><strong>{title}</strong><p>{description}</p></div>
-            </div>
-          ))}
-          <div className="focus-footer">
-            <span>Python · SQL · DuckDB</span>
-            <span className="orbit" aria-hidden="true"><i /><i /><i /></span>
+        <aside className="hero-panel" aria-label={copy.focus}>
+          <div className="panel-top"><span>{copy.focus}</span><span>2026 — 27</span></div>
+          <StatsVisual fitLabel={copy.statsFit} outlierLabel={copy.statsOutlier} residualLabel={copy.statsResidual} />
+          <div className="focus-list">
+            {copy.focusItems.map(([title, description], index) => (
+              <div className="focus-item" key={title}>
+                <span className="focus-number">0{index + 1}</span>
+                <div><strong>{title}</strong><p>{description}</p></div>
+              </div>
+            ))}
           </div>
+          <div className="panel-footer"><span>Python · SQL · DuckDB</span><span>pandas · NumPy</span></div>
         </aside>
       </section>
 
@@ -237,13 +254,22 @@ export default function Home() {
         <div className="project-grid">
           <a className="project-card project-data" href="/projetos/paysim">
             <span className="project-index">01 / DATA</span>
-            <div className="project-visual data-visual" aria-hidden="true"><i /><i /><i /><i /><b /><b /></div>
+            <div className="metric-visual" aria-hidden="true">
+              <span className="metric-title">{copy.paysimMetric}</span>
+              {copy.paysimBars.map(([label, value, pct]) => (
+                <div className="metric-row" key={label}>
+                  <span>{label}</span>
+                  <div className="metric-track"><i style={{ width: `${pct}%` }} /></div>
+                  <b>{value}</b>
+                </div>
+              ))}
+            </div>
             <div><h3>PaySim</h3><p>{copy.paysim}</p><ul className="project-tags" aria-label="PaySim stack"><li>Python</li><li>DuckDB</li><li>NetworkX</li></ul></div>
             <span className="project-link">{copy.explore} <Arrow /></span>
           </a>
           <a className="project-card project-product" href="/projetos/nois-dois">
             <span className="project-index">02 / PRODUCT</span>
-            <div className="project-visual product-visual" aria-hidden="true"><i /><i /><span>ND</span></div>
+            <div className="phone-visual" aria-hidden="true"><Image src="/projects/nois-dois/inicio.png" width={390} height={844} alt="" /></div>
             <div><h3>Nós Dois</h3><p>{copy.noisDois}</p><ul className="project-tags" aria-label="Nós Dois project framing">{copy.noisTags.map((tag) => <li key={tag}>{tag}</li>)}</ul></div>
             <span className="project-link">{copy.explore} <Arrow /></span>
           </a>
@@ -300,6 +326,7 @@ export default function Home() {
             <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
             <a href={profile.github} target="_blank" rel="noreferrer">GitHub <Arrow /></a>
           </div>
+          <LossCurve />
         </div>
       </section>
 
