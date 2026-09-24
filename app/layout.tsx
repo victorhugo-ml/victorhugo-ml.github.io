@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Victor Hugo — Dados, análise e produto";
+const title = "Victor Hugo — Estatística, dados e Machine Learning";
 const description =
-  "Portfólio de Victor Hugo, estudante da UFABC em busca de estágio em Ciência de Dados, Análise de Dados ou IA, com projetos em Python, SQL, análise exploratória e grafos.";
+  "Portfólio de Victor Hugo, estudante da UFABC em busca de estágio em Ciência de Dados, Análise de Dados ou IA, com projetos em Python, SQL, estatística e análise exploratória.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://victorhugo-ml.github.io"),
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description,
     type: "website",
     url: "/",
-    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Victor Hugo — Dados, código e produto" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Victor Hugo — Estatística, dados e Machine Learning" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -6,9 +6,9 @@ import { profile } from "./profile";
 import { LossCurve, StatsVisual } from "./StatsVisual";
 
 const localizedTitles: Record<Locale, string> = {
-  pt: "Victor Hugo — Dados, análise e produto",
-  en: "Victor Hugo — Data, analysis, and product",
-  es: "Victor Hugo — Datos, análisis y producto",
+  pt: "Victor Hugo — Estatística, dados e Machine Learning",
+  en: "Victor Hugo — Statistics, data, and Machine Learning",
+  es: "Victor Hugo — Estadística, datos y Machine Learning",
 };
 
 const translations = {
@@ -17,8 +17,8 @@ const translations = {
     homeLabel: "Início",
     nav: { projects: "Projetos", about: "Sobre", contact: "Contato" },
     available: "Disponível para estágio em Dados e IA",
-    hero: ["Dados, código", "e produto —"],
-    heroAccent: "com propósito.",
+    hero: "Estatística, dados\u00a0e",
+    heroAccent: "Machine Learning.",
     intro: "Sou Victor Hugo, estudante da UFABC em busca de estágio em Ciência de Dados, Análise de Dados ou IA. Pratico Python e SQL em projetos acadêmicos e aprofundo meus estudos em estatística e Machine Learning.",
     seeProjects: "Ver projetos",
     signals: [
@@ -33,7 +33,7 @@ const translations = {
     paysimMetric: "Saldo de origem zerado",
     paysimBars: [["Fraudes", "100%", 100], ["Demais transações", "24%", 24]] as [string, string, number][],
     focusItems: [
-      ["Dados & grafos", "Estrutura, contexto e investigação."],
+      ["Estatística & dados", "Análise exploratória, inferência e investigação."],
       ["Machine Learning", "Fundamentos em estudo no PMQ/UFABC."],
     ],
     selected: "Trabalho selecionado",
@@ -78,8 +78,8 @@ const translations = {
     homeLabel: "Home",
     nav: { projects: "Projects", about: "About", contact: "Contact" },
     available: "Open to Data and AI internships",
-    hero: ["Data, code", "and product —"],
-    heroAccent: "with purpose.",
+    hero: "Statistics, data,\u00a0and",
+    heroAccent: "Machine Learning.",
     intro: "I’m Victor Hugo, a UFABC student seeking an internship in Data Science, Data Analysis, or AI. I practice Python and SQL through academic projects and am developing my foundations in statistics and Machine Learning.",
     seeProjects: "View projects",
     signals: [
@@ -94,7 +94,7 @@ const translations = {
     paysimMetric: "Zeroed origin balance",
     paysimBars: [["Frauds", "100%", 100], ["Other transactions", "24%", 24]] as [string, string, number][],
     focusItems: [
-      ["Data & graphs", "Structure, context, and investigation."],
+      ["Statistics & data", "Exploratory analysis, inference, and investigation."],
       ["Machine Learning", "Studying the foundations at PMQ/UFABC."],
     ],
     selected: "Selected work",
@@ -139,8 +139,8 @@ const translations = {
     homeLabel: "Inicio",
     nav: { projects: "Proyectos", about: "Sobre mí", contact: "Contacto" },
     available: "Disponible para prácticas en Datos e IA",
-    hero: ["Datos, código", "y producto —"],
-    heroAccent: "con propósito.",
+    hero: "Estadística, datos\u00a0y",
+    heroAccent: "Machine Learning.",
     intro: "Soy Victor Hugo, estudiante de la UFABC en busca de prácticas en Ciencia de Datos, Análisis de Datos o IA. Practico Python y SQL en proyectos académicos y profundizo mis estudios de estadística y Machine Learning.",
     seeProjects: "Ver proyectos",
     signals: [
@@ -155,7 +155,7 @@ const translations = {
     paysimMetric: "Saldo de origen en cero",
     paysimBars: [["Fraudes", "100 %", 100], ["Demás transacciones", "24 %", 24]] as [string, string, number][],
     focusItems: [
-      ["Datos y grafos", "Estructura, contexto e investigación."],
+      ["Estadística y datos", "Análisis exploratorio, inferencia e investigación."],
       ["Machine Learning", "Fundamentos en estudio en PMQ/UFABC."],
     ],
     selected: "Trabajo seleccionado",
@@ -220,7 +220,7 @@ export default function Home() {
       <section className="hero shell" id="inicio">
         <div className="hero-copy">
           <p className="eyebrow"><span /> {copy.available}</p>
-          <h1>{copy.hero[0]}<br />{copy.hero[1]}<br /><em>{copy.heroAccent}</em></h1>
+          <h1>{copy.hero}<br /><em>{copy.heroAccent}</em></h1>
           <p className="hero-intro">{copy.intro}</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#projetos">{copy.seeProjects} <Arrow /></a>
