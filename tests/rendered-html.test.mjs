@@ -16,7 +16,8 @@ test("exports the complete portfolio homepage", async () => {
   assert.match(html, /PaySim/);
   assert.match(html, /linkedin\.com\/in\/victorhmarcelino/);
   assert.doesNotMatch(html, /victor-hugo-miranda-marcelino-6b2850369/);
-  assert.match(html, /2030/);
+  assert.match(html, /2029/);
+  assert.match(html, /Certificações/);
   assert.match(html, /Programa Manuel Querino/);
   assert.match(html, /extensão em andamento/);
   assert.match(html, /Machine Learning/);
@@ -37,6 +38,8 @@ test("exports the PaySim case study with canonical metadata", async () => {
   assert.match(html, /apresentado ao professor em vídeo/);
   assert.match(html, /318/);
   assert.match(html, /exercício de aprendizado/);
+  assert.match(html, /só 2 contas de cliente/);
+  assert.match(html, /vazamento de alvo/);
   assert.match(html, /github\.com\/victorhugo-ml\/paysim-fraud-network-analysis/);
   assert.match(html, /https:\/\/victorhugo-ml\.github\.io\/projects\/paysim\/subgrafo-fraudes\.png/);
   assert.match(html, /https:\/\/victorhugo-ml\.github\.io\/projetos\/paysim/);
