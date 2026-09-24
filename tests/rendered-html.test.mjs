@@ -8,8 +8,8 @@ test("exports the complete portfolio homepage", async () => {
   const html = await readPage("index.html");
 
   assert.match(html, /<html[^>]*lang="pt-BR"/i);
-  assert.match(html, /Victor Hugo — Dados, análise e produto/);
-  assert.match(html, /Dados, código/);
+  assert.match(html, /Victor Hugo — Estatística, dados e Machine Learning/);
+  assert.match(html, /Estatística, dados/);
   assert.match(html, />PT<\/button>/);
   assert.match(html, />EN<\/button>/);
   assert.match(html, />ES<\/button>/);
