@@ -86,7 +86,7 @@ const projects = {
       es: {
         category: "Datos · grafos · análisis exploratorio",
         title: "PaySim",
-        intro: "Desarrollado en 2026 como proyecto de la asignatura Comunicación y Redes (BCM0506-15) del Bachillerato en Ciencia y Tecnología de la UFABC y presentado al profesor en video. Como el programa abarca redes complejas, teoría de grafos y propiedades estructurales de las redes, enfoqué el análisis como un problema de grafos y no como un problema tabular.",
+        intro: "Desarrollado en 2026 como proyecto de la asignatura Comunicación y Redes (BCM0506-15) del Grado en Ciencia y Tecnología de la UFABC y presentado al profesor en video. Como el programa abarca redes complejas, teoría de grafos y propiedades estructurales de las redes, enfoqué el análisis como un problema de grafos y no como un problema tabular.",
         facts: [["1.000", "transacciones"], ["25", "fraudes seleccionados"], ["1.780", "nodos"], ["318", "períodos"]],
         challengeTitle: "Preservar la estructura sin cargar millones de filas",
         challengeBody: "PaySim contiene millones de filas, pero yo necesitaba una red pequeña para estudiar y visualizar. Una muestra aleatoria simple eliminaba muchas conexiones, así que reuní 1.000 transacciones sin tratar el resultado como representativo de toda la población.",
