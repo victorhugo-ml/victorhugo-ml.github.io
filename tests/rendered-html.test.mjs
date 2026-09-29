@@ -18,8 +18,8 @@ test("exports the complete portfolio homepage", async () => {
   assert.doesNotMatch(html, /victor-hugo-miranda-marcelino-6b2850369/);
   assert.match(html, /2029/);
   assert.match(html, /Certificações/);
-  assert.match(html, /Programa Manuel Querino/);
-  assert.match(html, /extensão em andamento/);
+  assert.doesNotMatch(html, /Manuel Querino|PMQ/);
+  assert.match(html, /Applied Machine Learning/);
   assert.match(html, /Machine Learning/);
   assert.match(html, /Projeto exploratório de estudo/);
   assert.match(html, /Nós Dois/);
