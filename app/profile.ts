@@ -4,6 +4,4 @@ export const profile = {
   github: "https://github.com/victorhugo-ml",
   bctStart: 2025,
   bctGraduation: 2029,
-  pmqYear: 2026,
-  pmqHours: 200,
 };
