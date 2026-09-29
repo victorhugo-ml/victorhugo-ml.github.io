@@ -34,7 +34,7 @@ const translations = {
     paysimBars: [["Fraudes", "100%", 100], ["Demais transações", "24%", 24]] as [string, string, number][],
     focusItems: [
       ["Estatística & dados", "Análise exploratória, inferência e investigação."],
-      ["Machine Learning", "Fundamentos em estudo no PMQ/UFABC."],
+      ["Machine Learning", "Fundamentos em estudo na UFABC."],
     ],
     selected: "Trabalho selecionado",
     projectHeading: ["Dois projetos.", "Duas perspectivas."],
@@ -53,8 +53,8 @@ const translations = {
     aboutHeading: ["Da mágica", "à matemática."],
     aboutText: "Quando entrei na UFABC, não sabia bem para onde ir: pensei em Ciência da Computação, depois em Engenharia de Automação. A virada veio numa disciplina de lógica em Python. Comecei mal, mas o professor era rigoroso, e eu saí dela apaixonado por programar. Logo depois descobri Machine Learning, que parecia mágica, e fui para a matemática e a estatística entender como funciona. Antes da universidade, fui aprendiz na produção de caminhões e ônibus da Mercedes-Benz.",
     ufabc: "Bacharelado interdisciplinar: matemática, física, química, biologia, computação e humanidades · trajetória para Ciência de Dados",
-    pmq: "Inteligência Artificial Aplicada · extensão em andamento · setembro–dezembro",
-    pmqTopics: "Preparação de dados · aprendizado supervisionado · agrupamento · dados textuais · avaliação de resultados",
+    aml: "Curso de extensão em andamento, em inglês · setembro–novembro",
+    amlTopics: "Aprendizado supervisionado · regressão linear e logística · árvores · ensembles e gradient boosting · seleção de modelos · notebook semanal",
     technical: "Aprendizagem industrial · 1.600 h",
     technicalDetail: "Montagem mecânica, sistemas elétricos e eletromecânicos e usinagem CNC na produção de caminhões e ônibus",
     certsLabel: "Certificações",
@@ -95,7 +95,7 @@ const translations = {
     paysimBars: [["Frauds", "100%", 100], ["Other transactions", "24%", 24]] as [string, string, number][],
     focusItems: [
       ["Statistics & data", "Exploratory analysis, inference, and investigation."],
-      ["Machine Learning", "Studying the foundations at PMQ/UFABC."],
+      ["Machine Learning", "Studying the foundations at UFABC."],
     ],
     selected: "Selected work",
     projectHeading: ["Two projects.", "Two perspectives."],
@@ -114,8 +114,8 @@ const translations = {
     aboutHeading: ["From magic", "to math."],
     aboutText: "When I started at UFABC, I wasn’t sure where I was headed: first Computer Science, then Automation Engineering. The turning point was a Python logic course. I started badly, but the professor was demanding, and I came out of it in love with programming. Soon after, I found Machine Learning, which felt like magic, and turned to math and statistics to understand how it works. Before university, I was an apprentice in truck and bus production at Mercedes-Benz.",
     ufabc: "Interdisciplinary bachelor’s: mathematics, physics, chemistry, biology, computing and the humanities · path toward Data Science",
-    pmq: "Applied Artificial Intelligence · extension programme in progress · September–December",
-    pmqTopics: "Data preparation · supervised learning · clustering · text data · results evaluation",
+    aml: "Extension course in progress, taught in English · September–November",
+    amlTopics: "Supervised learning · linear and logistic regression · decision trees · ensembles and gradient boosting · model selection · weekly notebook",
     technical: "Industrial apprenticeship · 1,600 h",
     technicalDetail: "Mechanical assembly, electrical and electromechanical systems, and CNC machining in truck and bus production",
     certsLabel: "Certifications",
@@ -156,7 +156,7 @@ const translations = {
     paysimBars: [["Fraudes", "100 %", 100], ["Demás transacciones", "24 %", 24]] as [string, string, number][],
     focusItems: [
       ["Estadística y datos", "Análisis exploratorio, inferencia e investigación."],
-      ["Machine Learning", "Fundamentos en estudio en PMQ/UFABC."],
+      ["Machine Learning", "Fundamentos en estudio en la UFABC."],
     ],
     selected: "Trabajo seleccionado",
     projectHeading: ["Dos proyectos.", "Dos perspectivas."],
@@ -175,8 +175,8 @@ const translations = {
     aboutHeading: ["De la magia", "a las matemáticas."],
     aboutText: "Cuando entré en la UFABC, no tenía claro hacia dónde ir: primero pensé en Ciencia de la Computación, después en Ingeniería de Automatización. El punto de inflexión fue una asignatura de lógica con Python. Empecé mal, pero el profesor era exigente, y salí de ella enamorado de la programación. Poco después descubrí el Machine Learning, que parecía magia, y me fui a las matemáticas y la estadística para entender cómo funciona. Antes de la universidad, fui aprendiz en la producción de camiones y autobuses de Mercedes-Benz.",
     ufabc: "Grado interdisciplinario: matemáticas, física, química, biología, computación y humanidades · trayectoria hacia Ciencia de Datos",
-    pmq: "Inteligencia Artificial Aplicada · extensión en curso · septiembre–diciembre",
-    pmqTopics: "Preparación de datos · aprendizaje supervisado · agrupamiento · datos textuales · evaluación de resultados",
+    aml: "Curso de extensión en curso, en inglés · septiembre–noviembre",
+    amlTopics: "Aprendizaje supervisado · regresión lineal y logística · árboles · ensembles y gradient boosting · selección de modelos · notebook semanal",
     technical: "Aprendizaje industrial · 1.600 h",
     technicalDetail: "Montaje mecánico, sistemas eléctricos y electromecánicos y mecanizado CNC en la producción de camiones y autobuses",
     certsLabel: "Certificaciones",
@@ -295,7 +295,7 @@ export default function Home() {
         </div>
         <div className="timeline" aria-label={copy.aboutLabel}>
           <div className="timeline-item"><span className="timeline-year">{profile.bctStart} — {profile.bctGraduation}</span><div><strong>UFABC</strong><p>{copy.ufabc}</p></div></div>
-          <div className="timeline-item"><span className="timeline-year">{profile.pmqYear}</span><div><strong>UFABC / Programa Manuel Querino</strong><p>{copy.pmq} · {profile.pmqHours} h</p><p style={{ marginTop: 6 }}>{copy.pmqTopics}</p></div></div>
+          <div className="timeline-item"><span className="timeline-year">2026</span><div><strong>UFABC / Applied Machine Learning</strong><p>{copy.aml}</p><p style={{ marginTop: 6 }}>{copy.amlTopics}</p></div></div>
           <div className="timeline-item"><span className="timeline-year">2026</span><div><strong>{copy.certsLabel}</strong><p>{copy.certs}</p></div></div>
           <div className="timeline-item"><span className="timeline-year">2023 — 25</span><div><strong>SENAI / Mercedes-Benz</strong><p>{copy.technical}</p><p style={{ marginTop: 6 }}>{copy.technicalDetail}</p></div></div>
           <div className="language-line">{copy.languages.map((language) => <span key={language}>{language}</span>)}</div>
